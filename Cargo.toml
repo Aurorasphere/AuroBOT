@@ -1,0 +1,12 @@
+[package]
+name = "aurobot"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serenity = { version = "0.12", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "cache"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
+dotenv = "0.15"
+num-bigint = { version = "0.4", features = ["serde"] }
+num-rational = "0.4"
+num-traits = "0.2"
